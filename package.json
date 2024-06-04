@@ -1,0 +1,28 @@
+{
+  "name": "register-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch  --env-file=.env .",
+    "build": "babel src --out-dir build",
+    "start": "node  build/index.js  --env-file=.env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "cors": "2.8.5",
+    "express": "4.19.2",
+    "helmet": "7.1.0",
+    "jsonwebtoken": "9.0.2",
+    "morgan": "1.10.0",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "6.37.3"
+  },
+  "packageManager": "pnpm@9.1.4+sha1.2432063d815cfa88fd9fef1d85a445e3f609851d"
+}
